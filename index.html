@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+    <style>
+      ul .naoRealizada {
+        cursor: pointer;
+        list-style-type: "☐";
+      }
+
+      ul .realizada {
+        cursor: pointer;
+        color: black;
+        list-style-type: "☑";
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Lista de Tarefas ☑</h1>
+      <div>
+        <input
+          id="caixaTexto"
+          type="text"
+          placeholder="Adicione uma tarefa"
+          minlength="1"
+          maxlength="29"
+          value="Tarefa"
+        />
+        <button id="addTarefa">✚</button>
+        <select id="listaSuspensa" hidden>
+          <option>-- Selecione uma opção --</option>
+          <option>Marcar todas as tarefas</option>
+          <option>Desmarcar todas as tarefas</option>
+          <option>Limpar tarefas</option>
+        </select>
+      </div>
+
+      <ul id="listaTarefas"></ul>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
