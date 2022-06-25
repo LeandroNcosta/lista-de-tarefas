@@ -231,3 +231,13 @@ body::before {
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 435px) {
+  ul li {
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  #addTarefa {
+    margin-top: 10px;
+  }
+}
